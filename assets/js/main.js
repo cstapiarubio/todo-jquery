@@ -6,7 +6,7 @@ $(document).ready(function(){
 			alert("Debes ingresar una tarea");	
 		}
 		else{
-			$("#contenedor").append("<div><span class='center-align'>"+ job + '</span>'+ '</div>'+'<button>Remove</button>');	
+			$("#contenedor").append("<div><span class='center-align'>"+ job + '</span>'+ '</div>'+'<button>Remove</button>'+ "<p><input type='checkbox'></p>");	
 		}
 	});
 });

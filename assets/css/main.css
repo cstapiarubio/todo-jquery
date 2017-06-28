@@ -18,6 +18,11 @@ body{
 nav{
 	background-color: #13DAB3;
 	height: 40px;
+	margin-top: -30px;
+}
+
+nav h1{
+	font-size: 30px;
 }
 
 header, section{
@@ -37,4 +42,12 @@ label, span, p{
 
 span{
 	display: block;
+}
+
+h4{
+	color: #1077DE;
+}
+
+#formulario input{
+	background-color: #23AEC7;
 }
