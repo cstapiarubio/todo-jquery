@@ -1,4 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body{
 	background-image: url("../img/6-tareas-diarias-de-un-emprendedor.png");
-	color: whitesmoke;
+	color: whitesmoke;                         
+	height: 610px;       
+	width: 100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	background-position:30% 95%;
+}
+
+nav{
+	background-color: #13DAB3;
+	height: 40px;
+}
+
+header, section{
+	padding: 4% 0;
+	background-color: rgba(187, 212, 208, 0.8);
+
+}
+
+button{
+	background-color: rgb(150, 208, 212);
+	color: black;
+}
+
+label, span, p{
+	color: black;
+}
+
+span{
+	display: block;
 }
