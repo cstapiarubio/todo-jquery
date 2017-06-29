@@ -1,23 +1,23 @@
 $(document).ready(function(){
+	/*botón que si dejo espacio en blanco, 
+	me alerta que ingresar un tarea*/
 	$("#button").click(function(e){
 		e.preventDefault();
 		var job = $("#tareas").val();
 		if(job == ""){
 			alert("Debes ingresar una tarea");	
 		}
+		/*sino, me guarda la tarea que ingrese, no me sale el checkbox*/
 		else{
-			$("#contenedor").append("<div><span class='center-align'>"+ job + '</span>'+ '</div>'+'<button id="jobRemove">Remove</button>'+ "<p><input type='checkbox'></p>");	
+			$("#contenedor").append("<div><span class='center-align'>"+ job + '</span>'+ '</div>'+'<button id="jobRemove">Remove</button>'+ "<input type='checkbox'>");	
 		}
+		/*al apretar el boton "remove" me borra las tareas añadidas*/
+		$('#jobRemove').click(function(){
+  		var parentItem= $(this).parent();
+         $(parentItem).remove();
 	});
 });
-
-  $('#jobRemove').click(function(){
-         $("#contenedor").child().remove();
-    });
-
-  
-
-
+	});
 
 
 /*
