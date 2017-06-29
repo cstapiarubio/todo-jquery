@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}
 		/*sino, me guarda la tarea que ingrese, no me sale el checkbox*/
 		else{
-			$("#contenedor").append("<div><span class='center-align'>"+ job + '</span>'+ '</div>'+'<button id="jobRemove">Remove</button>'+ "<input type='checkbox'>");	
+			$("#contenedor").append("<div><span class='center-align'>"+ job + '</span>'+ '</div>'+'<button id="jobRemove">Remove</button>'+ "<input type='checkbox'>"+ "<form><p><input type='checkbox' class='filled-in' id='filled-in-box' checked='checked'/></p></form>");	
 		}
 		/*al apretar el boton "remove" me borra las tareas añadidas*/
 		$('#jobRemove').click(function(){
